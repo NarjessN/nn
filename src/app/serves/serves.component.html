@@ -1,0 +1,35 @@
+<!--<label> server name </label>
+<p><input type ="text"
+  (input) = "update_server($event)"   
+    ></p>
+  <p> {{server_name}}</p>
+  <p><input type ="text"
+    [(ngModel)]="server_name" 
+      ></p>
+    <p> {{server_name}}</p>
+<p> {{allowaddserver}}</p>
+<p> {{server_creation}}</p>
+<p> {{server_status}}</p>
+<button class ="btn btn-primary"
+[disabled]="server_name === ''"
+(click)="oncreation()"
+>  server name  </button>
+<p *ngIf ="server_creation ; else noserver was created  ">  the server was creation {{server_name}} </p>
+<ng-template #noserver >
+<p> 
+  no server was created
+</p>
+
+
+</ng-template>
+
+<app-server></app-server>
+<app-server></app-server>
+-->
+ 
+  <p 
+  [ng style]="{backgroundcolor : getcolor()}"
+
+ > the server status  {{server_status}} </p>
+ 
+ 
